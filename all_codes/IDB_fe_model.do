@@ -136,7 +136,6 @@ outreg2  using "${output}\tables\Results_v2.tex", drop(i.year) tex nocons tdec(2
 
 
 capture log close
-capture erase "`c(pwd)'/IDB_fe_model.log'"
 
 
 
