@@ -35,9 +35,12 @@ However, you **must specify the Stata path** as an input in two situations:
 2. **Stata is not installed in the default system path**.
 
 The default system path where the code search for Stata.exe are:
-stata_path <- "C:/Program Files/StataXX/"                                # Windows system
-stata_path <- "/Applications/Stata/StataYY.app/Contents/MacOS/StataYY"   # macOS system
-stata_path <- "/usr/local/stataXX/stata-mp"                              # Linux system
+- Windows system
+  - "C:/Program Files/StataXX/"                                
+- macOS system
+  - "/Applications/Stata/StataYY.app/Contents/MacOS/StataYY"   
+- Linux system
+  - "/usr/local/stataXX/stata-mp"                              
 
 Where XX denotes the number version and YY the Stata type (SE, MP, BE)
 
