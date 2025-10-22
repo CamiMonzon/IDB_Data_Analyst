@@ -13,8 +13,8 @@ The entire pipeline can be executed **with a single click** through the `Master_
 - **Master_script** - Executes the entire replication
 - **/all_codes**
   - `replic_setup.R` - Environment setup (package install, paths)
-  - `Ingest_clean_IDB_api_dbx.R` - Data ingestion and cleaning (R)
-  - `IDB_fe_model_dbx.do` - Model estimation (Stata)
+  - `Ingest_clean_IDB_api.R` - Data ingestion and cleaning (R)
+  - `IDB_fe_model.do` - Model estimation (Stata)
 - **/IDB_Data_Analyst**
   - **/data** - Created automatically; stores processed data
   - **/outputs** - Created automatically; stores final results
@@ -57,13 +57,13 @@ Importat: do it **before running** the Master code
 - Defines relative paths and Stata executable
 - Ensures a clean environment before running
 
-### 2. **Data Ingestion & Cleaning** (`Ingest_clean_IDB_api_dbx.R`)
+### 2. **Data Ingestion & Cleaning** (`Ingest_clean_IDB_api.R`)
 - Downloads datasets from the IDB API
 - Filters countries and years (2003–2022)
 - Harmonizes variable names and structures
 - Produces a unified `.dta` database
 
-### 3. **Model Estimation** (`IDB_fe_model_dbx.do`)
+### 3. **Model Estimation** (`IDB_fe_model.do`)
 - Loads the processed data
 - Estimates a country fixed-effects model
 - Exports the regression output to `/outputs`
