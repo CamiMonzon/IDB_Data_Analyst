@@ -29,10 +29,7 @@ This single script performs all steps: setup → data ingestion and cleaning →
 
 ### 2. Stata path setup (important)
 By default, the script attempts to **automatically detect Stata** depending on your operating system.  
-However, you **must specify the Stata path** as an input in two situations:
-
-1. **Stata version is older than 17**, or  
-2. **Stata is not installed in the default system path**.
+However, you **must specify the Stata path** as an input when **Stata is not installed in the default system path**.
 
 The default system path where the code search for Stata.exe are:
 - Windows system
