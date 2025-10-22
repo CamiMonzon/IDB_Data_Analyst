@@ -104,6 +104,7 @@ Upon successful execution, the following folders and files will be created autom
 - **/IDB_Data_Analyst/outputs/**
   - **tables/** `FE_model_results.txt` - Fixed-effects model summary (Stata)
   - **graphs/** - Directory for output graphs
+  - Stata log file 
 
 -----
 
