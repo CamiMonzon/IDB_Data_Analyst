@@ -24,3 +24,4 @@ source(codes_dir %+% "/Ingest_clean_IDB_api.R")
 
 # ---- 2. Analisys & Model (Stata) ----
 system2(stata_path, args = c("-b", "do", codes_dir %+% "/IDB_fe_model.do"))
+unlink(getwd() %+% "/IDB_fe_model.log")
